@@ -1,0 +1,167 @@
+/* Estilos modulo cargar video */
+
+.titulo-cargar {
+    font-family: "sofiapro-bold", PingFangSC, sans-serif;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1;
+    margin-top: 130px;
+}
+
+.subtitulo-cargar {
+    font-family: "proxima-regular", PingFangSC, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #8a8b91;
+    margin-top: 2px;
+}
+
+.btn-cargarvideo {
+    background: rgba(22, 24, 35, 0.03);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: background .15s ease-in-out;
+    width: 306px;
+    height: 544px;
+    box-sizing: inherit;
+}
+
+.input-cargarvideo {
+    height: 0;
+    width: 0;
+    opacity: 0;
+    position: absolute;
+    overflow: visible;
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+input[type="file" i] {
+    appearance: initial;
+    background-color: initial;
+    cursor: default;
+    align-items: baseline;
+    color: inherit;
+    text-align: start !important;
+    padding: initial;
+    border: initial;
+}
+
+input {
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    /* color: -internal-light-dark(black, white); */
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+}
+
+.cargar-video {
+    height: 100%;
+    box-sizing: inherit;
+}
+
+.cargarVideo {
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+
+/* Estilos para input type file */
+
+.card--xyu_N {
+    width: 306px;
+    height: 544px
+}
+
+.stage-1--1ILL2 {
+    background: rgba(22, 24, 35, 0.03);
+    border-radius: 8px;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    cursor: pointer;
+    -webkit-transition: background .15s ease-in-out;
+    -moz-transition: background .15s ease-in-out;
+    transition: background .15s ease-in-out
+}
+
+.upload-btn-input--36XER {
+    height: 0;
+    width: 0;
+    opacity: 0;
+    position: absolute
+}
+
+.upload--RMkTQ {
+    height: 100%
+}
+
+.upload-btn--3w4JZ {
+    cursor: pointer
+}
+
+.upload-area--WlBXl {
+    text-align: center
+}
+
+.stage-1--1ILL2 .text-main--2WqVE {
+    font-family: "proxima-regular", PingFangSC, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: rgba(22, 24, 35, 0.34);
+    margin-top: 29px
+}
+
+.stage-1--1ILL2 .text-sub--27tQU {
+    margin: 0;
+    font-family: "proxima-regular", PingFangSC, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: rgba(22, 24, 35, 0.34);
+    text-align: left
+}
+
+
+/* Estilos para input type radio */
+
+.radioInput {
+    font-family: "proxima-regular", PingFangSC, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    display: block;
+    line-height: 20px;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -moz-box-orient: horizontal;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: pointer
+}

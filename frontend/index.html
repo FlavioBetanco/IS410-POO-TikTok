@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TikToks</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <script src="js/all.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <nav class="barra-superior navbar navbar-expand-lg navbar-light">
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <img src="img/logo-1.svg" alt="">
+            <img src="img/logo.svg" alt="">
+            <form class="form-inline my-2 my-lg-0 ml-auto">
+                <img class="cargarVideo" src="img/iconos/subirvideo.svg" alt="" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus
+                    sagittis lacus vel augue laoreet rutrum faucibus.">
+                <button class="btn btn-login my-2 my-sm-0" type="button" onclick="iniciarSesion()">
+                    iniciar Sesión
+                </button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <aside class="barra-lateral">
+            <div class="row">
+                <div class="col-12 bl-caja">
+                    <img src="img/home.svg" alt=""><span class="bl-opciones">Para ti</span>
+                </div>
+                <div class="col-12 bl-caja">
+                    <img src="img/hashtag.svg" alt=""><span class="bl-opciones">Tendencias</span>
+                </div>
+                <div class="col-12 bl-caja">
+                    <img src="img/users.svg" alt=""><span class="bl-opciones">Siguiendo</span>
+                </div>
+            </div><br><br>
+
+            <div class="col-12">
+                <p class="bl-texto">Inicia sesión para seguir a autores, dar un me gusta a videos y ver comentarios.</p>
+                <button class="bl-boton" type="button">Iniciar Sesión</button>
+            </div>
+            <div class="col-12 bl-enlaces">
+                <a href="">Inicio</a><a href="">Acerca de</a><a href="">Sala de prensa</a><br>
+
+            </div>
+            <div class="col-12"><span>© 2020 TikTok</span></div>
+
+        </aside>
+
+        <main class="contenido-principal">
+            <div class="row">
+                <div class="col-8">
+
+                    <div class="row">
+
+                        <div class="col-xl-4 foto-perfil" style="background-image: url('img/usuario.jpeg');"></div>
+                        <div class="col-xl-8">
+                            <h3 class="autor-id">fbetanco</h3>
+                            <h4 class="autor-usuarioN">Flavio Betanco</h4>
+                        </div>
+                        <div class="col-xl-8">
+                            <div class="video-container">
+                                <div class="video-container1">
+                                    <div class="video-container2">
+                                        <div class="video-container3">
+                                            <div class="video-container4">
+                                                <video class="video" id="video" autoplay muted>
+                                                    <source src="videos/video.mp4" type="video/mp4">
+                                                </video>
+                                                <!-- <span class="prueba"></span> -->
+                                                <div class="botonMute">
+                                                    <i class="iconoMute fas fa-volume-mute"></i>
+                                                </div>
+                                                <div class="botonPlaypausa">
+                                                    <i class="iconoPausa fas fa-pause" id="iconoPausa"></i>
+                                                </div>
+
+
+                                                <!-- <span class="prueba2"></span> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="video-foot">
+                                <div class="video-foot1">
+                                    <div class="feed-icono" style="background-image: url('img/iconos/like.svg');">
+                                    </div>
+                                    <strong title="like" class="contadores">28.8K</strong>
+                                </div>
+                                <div class="video-foot1">
+                                    <div class="feed-icono1" style="background-image: url('img/iconos/comment.svg');">
+                                    </div>
+                                    <strong title="like" class="contadores">28.8K</strong>
+                                </div>
+                                <div class="video-foot1">
+                                    <div class="feed-icono1" style="background-image: url('img/iconos/share.svg');">
+                                    </div>
+                                    <strong title="like" class="contadores">28.8K</strong>
+                                </div>
+                            </div>
+                            <hr><br>
+                        </div>
+                        <div class="col-xl-4">
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Modal para inicio de Sesión -->
+        <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="modalLoginLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+
+                    <div class="modalLogin-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-2"></div>
+                                <div class="col-8">
+                                    <h2>Iniciar Sesión</h2><br>
+                                    <h6>Correo Electronico o nombre de usuario</h6>
+                                    <form action="">
+                                        <div class="form-gruop">
+                                            <input type="email" class="form-control" placeholder="Correo electronico o nombre de usuario">
+                                        </div>
+                                        <div class="form-gruop">
+                                            <input type="text" class="form-control" placeholder="Contraseña">
+                                        </div>
+                                        <br><br>
+                                        <div class="form-group">
+                                            <input type="button" value="Iniciar Sesión" class="btn btn-light form-control">
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-2"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer center">
+                        <p>¿No tienes cuenta?</p><a class="btn-registrarse" onclick="registrarUsuario()">Registrate</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal registro de usuarios -->
+        <div class="modal fade" id="modalRegistrarse" tabindex="-1" role="dialog" aria-labelledby="modalRegistrarseLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+
+                    <div class="modalLogin-body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-2"></div>
+                                <div class="col-8">
+                                    <h3>Registrarse</h3><br>
+
+                                    <form action="">
+                                        <div class="row">
+
+                                            <div class="col-lg-4"><input type="text" name="" id="" class="form-control" placeholder="Mes"></div>
+                                            <div class="col-lg-4"><input type="text" class="form-control" placeholder="Dia"></div>
+                                            <div class="col-lg-4"><input type="text" class="form-control" placeholder="Año"></div>
+
+                                            <div class="col-lg-12">
+                                                <input type="text" class="form-control" placeholder="Dirección de correo electrónico">
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <input type="text" class="form-control" placeholder="Contraseña">
+                                            </div>
+                                            <br><br><br><br>
+                                            <div class="col-lg-12">
+                                                <input type="button" value="Siguiente" class="btn btn-primary form-control">
+                                            </div>
+                                            <div class="col-lg-12 texto-acuerdo">
+                                                <p>Al continuar, confirmas que estás de acuerdo con los Términos de uso de TikTok y que has leído la Política de privacidad de TikTok. Si te registras con SMS, puede que se aplique una tarifa por SMS.</p>
+                                            </div>
+                                        </div>
+                                    </form>
+
+                                </div>
+                                <div class="col-2"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <p>¿Ya tienes cuenta?</p><a onclick="iniciarSesion()" class="btn-registrarse"> iniciar
+                            Sesión</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/controlador.js"></script>
+</body>
+
+</html>
