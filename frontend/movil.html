@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/custom-movil.css">
+    <script src="js/all.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="dispositivo-movil">
+        <div class="container-1" style="display: block;">
+            <div class="clase-2" style="height: calc(100% - 0px);">
+                <div class="clase-3">
+
+                    <!--contenedor video-->
+                    <div class="clase-4" style="transform: translate3d(0px, 0px, 0px); position: relative;">
+                        <div class="clase-5" style="position: relative; width: 100vw; height: 100vh;" id="video1">
+                            <video class="video" id="video" autoplay muted style="object-fit: cover;">
+                                <source src="videos/video.mp4" type="video/mp4">
+                            </video>
+                            <div class="barra-lateral">
+                                <div class="sub-barra">
+                                    <div class="icono-lateral">
+                                        <i class="fas fa-2x fa-heart"></i>
+                                    </div>
+                                    <div class="icono-lateral">
+                                        <i class="fas fa-2x fa-comments"></i>
+                                    </div>
+                                    <div class="icono-lateral">
+                                        <i class="fas fa-2x fa-arrow-left"></i>
+                                    </div>
+                                    <div class="icono-lateral">
+                                        <a href="#video2"><i class="fas fa-2x fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="clase-5" style="position: relative; width: 100vw; height: 100vh;" id="video2">
+                            <video class="video" id="video" autoplay muted style="object-fit: cover;" class="video">
+                                <source src="videos/video.mp4" type="video/mp4">
+                            </video>
+
+                            <div class="barra-lateral">
+                                <div class="sub-barra">
+                                    <div class="icono-lateral">
+                                        <i class="fas fa-2x fa-heart"></i>
+                                    </div>
+                                    <div class="icono-lateral">
+                                        <i class="fas fa-2x fa-comments"></i>
+                                    </div>
+                                    <div class="icono-lateral">
+                                        <a href="#video1"><i class="fas fa-2x fa-arrow-left"></i></a>
+                                    </div>
+                                    <div class="icono-lateral">
+                                        <a href="#video2"><i class="fas fa-2x fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+
+                <div class="row">
+                    <!-- <div class="col-2 col-sm-2 col-md-2">
+                            <i class="fas fa-2x fa-comments"></i>
+                        </div>
+                        <div class="col-2 col-sm-2 col-md-2">
+                            <i class="fas fa-2x fa-comments"></i>
+                        </div>
+                        <div class="col-2 col-sm-2 col-md-2">
+                            <i class="fas fa-2x fa-comments"></i>
+                        </div>
+                        <div class="col-2 col-sm-2 col-md-2">
+                            <i class="fas fa-2x fa-comments"></i>
+                        </div>
+                        <div class="col-2 col-sm-2 col-md-2">
+                            <i class="fas fa-2x fa-comments"></i>
+                        </div> -->
+                    <div class="col-2 col-sm-2 col-md-2">
+                        <img src=" img/iconos-movil/home.svg " alt=" ">
+                    </div>
+                    <div class="col-2 col-sm-2 col-md-2">
+                        <img src="img/iconos-movil/lupa.svg" alt="">
+                    </div>
+                    <div class="col-1 col-sm-1 col-md-1"></div>
+                    <div class="col-2 col-sm-2 col-md-2">
+                        <img src=" img/iconos-movil/subirvideo.svg " alt=" ">
+                    </div>
+                    <div class="col-1 col-sm-1 col-md-1"></div>
+                    <div class="col-2 col-sm-2 col-md-2">
+                        <img src="img/iconos-movil/notificaciones.svg" alt="">
+                    </div>
+                    <div class="col-2 col-sm-2 col-md-2">
+                        <img src=" img/iconos-movil/perfil.svg " alt=" ">
+                    </div>
+
+                </div>
+
+            </footer>
+        </div>
+    </div>
+
+    <div class="login container-fluid " style="display: none; ">
+        <div class="row ">
+            <div class="col-12 ">
+                <h5 style="text-align: center; padding-top: 25px; ">Iniciar Sesión</h5>
+            </div>
+            <div class="form-gruop col-12 " style="padding-top: 25px; padding-bottom: 5px; ">
+                <input type="email " class="form-input form-control " placeholder="Correo electronico o nombre de usuario ">
+            </div>
+            <div class="form-gruop col-12 ">
+                <input type="text " class="form-input form-control " placeholder="Contraseña "><br>
+            </div>
+            <div class="form-group col-12 ">
+                <input type="button " value="Iniciar Sesión " class="btn btn-light form-input form-control ">
+            </div>
+        </div>
+    </div>
+
+    <div class="registrar-usuario container " style="display: none; ">
+        <div class="row ">
+
+            <div class="col-4 "><input type="text " class="form-input form-control " placeholder="Mes "></div>
+            <div class="col-4 "><input type="text " class="form-input form-control " placeholder="Dia "></div>
+            <div class="col-4 "><input type="text " class="form-input form-control " placeholder="Año "></div>
+
+            <div class="col-12 ">
+                <input type="text " class="form-input form-control " placeholder="Dirección de correo electrónico ">
+            </div>
+            <div class="col-12 ">
+                <input type="text " class="form-input form-control " placeholder="Contraseña ">
+            </div>
+            <br><br><br><br>
+            <div class="col-12 ">
+                <input type="button " value="Siguiente " class="btn btn-primary form-input form-control ">
+            </div>
+            <div class="col-12 texto-acuerdo ">
+                <p>Al continuar, confirmas que estás de acuerdo con los Términos de uso de TikTok y que has leído la Política de privacidad de TikTok. Si te registras con SMS, puede que se aplique una tarifa por SMS.
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.4.1.min.js "></script>
+    <script src="js/popper.min.js "></script>
+    <script src="js/bootstrap.min.js "></script>
+    <script src="js/controlador.js "></script>
+
+</body>
+
+
+</html>

@@ -1,0 +1,34 @@
+[{
+        "codigoUsuario": 1,
+        "nombre": "Pedro",
+        "apellido": "Martinez",
+        "correo": "prueba@gmail.com",
+        "nombreUsuario": "@pedromartinez",
+        "fechaNacimiento": "01/01/2000",
+        "contrasena": "bcdcb29ed2aab16d48c11485264df665e906bdd9",
+        "siguienedo": [],
+        "imagen": "img/usuario.jpeg"
+    },
+    {
+        "codigoUsuario": 2,
+        "nombre": "Juan",
+        "apellido": "Perez",
+        "correo": "juan@gmail.com",
+        "nombreUsuario": "@juanperez",
+        "fechaNacimiento": "01/01/2000",
+        "contrasena": "711383a59fda05336fd2ccf70c8059d1523eb41a",
+        "siguienedo": [],
+        "imagen": "img/usuario2.jpeg"
+    },
+    {
+        "codigoUsuario": 3,
+        "nombre": "Pablo",
+        "apellido": "Hernandez",
+        "correo": "pablo@gmail.com",
+        "nombreUsuario": "@phernandez",
+        "fechaNacimiento": "01/01/2000",
+        "contrasena": "711383a59fda05336fd2ccf70c8059d1523eb41a",
+        "siguienedo": [],
+        "imagen": "img/usuario2.jpeg"
+    }
+]

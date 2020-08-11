@@ -1,0 +1,22 @@
+[{
+        "codigoComentario": 1,
+        "codigoPost": 1,
+        "codigoUsuario": 1,
+        "usuario": "Vegeta",
+        "comentario": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat, iusto."
+    },
+    {
+        "codigoComentario": 2,
+        "codigoPost": 3,
+        "codigoUsuario": 2,
+        "usuario": "Vegeta",
+        "comentario": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat, iusto."
+    },
+    {
+        "codigoComentario": 3,
+        "codigoPost": 1,
+        "codigoUsuario": 2,
+        "usuario": "Vegeta",
+        "comentario": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat, iusto."
+    }
+]
