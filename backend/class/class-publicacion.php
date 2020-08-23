@@ -70,6 +70,26 @@ class Publicacion
         // echo json_encode($comentarios);
     }
 
+    public function guadarPublicacion()
+    {
+        $contenidoArchivoPublicaciones = file_get_contents('../data/publicaciones.json');
+        $publicaciones = json_decode($contenidoArchivoPublicaciones, true);
+
+        $publicaciones[] = array(
+            "codigoPublicacion" => sizeof($publicaciones) + 1,
+            "codigoUsuario" => $this->codigoUsuario,
+            "leyenda" => $this->leyenda,
+            "privacidad" => $this->privacidad,
+            "urlVideo" => $this->urlVideo,
+            "cantidadLikes" => $this->cantidadLikes,
+            "comentarios" => $this->comentarios
+        );
+
+        $archivo = fopen("../data/publicaciones.json", "w");
+        fwrite($archivo, json_encode($publicaciones));
+        fclose($archivo);
+    }
+
 
     // Medotos SET y GET
 

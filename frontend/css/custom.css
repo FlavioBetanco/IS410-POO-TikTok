@@ -100,6 +100,7 @@
 }
 
 .contenido-principal {
+    position: relative;
     padding-top: 105px;
     margin-left: 300px;
 }
@@ -118,10 +119,10 @@
 }
 
 .foto-perfil {
-    display: block;
+    /* display: block; */
     width: 56px;
     height: 56px;
-    flex: 0 0 56px;
+    /* flex: 0 0 56px; */
     border-width: 0.5px;
     border-style: solid;
     border-color: rgba(22, 24, 35, 0.12);
@@ -209,7 +210,7 @@
 .video-container1 {
     width: 348px;
     height: 520px;
-    position: relative;
+    position: absolute;
 }
 
 .video-container2 {
@@ -286,7 +287,7 @@
     width: unset;
     flex-direction: row;
     margin-bottom: 0px;
-    margin-right: 34px;
+    /* margin-right: 34px; */
     -webkit-box-align: center;
     align-items: center;
     position: relative;
@@ -332,9 +333,7 @@
     position: relative!important;
     margin-top: 8px!important;
     -webkit-box-pack: justify!important;
-    height: 34px!important;
-    line-height: 34px!important;
-    box-sizing: content-box!important;
+    height: 45px;
 }
 
 .btn-ligth {
@@ -368,11 +367,73 @@
     margin-right: 20px;
 }
 
+.card {
+    border-radius: 8px!important;
+}
+
+.menu-movil {
+    /* height: 100px; */
+    bottom: 0!important;
+    width: 100%;
+    background-color: black;
+    /* position: relative; */
+}
+
+
+/* Estilos de perfil de usuario */
+
+.miniatura-video {
+    height: 310px!important;
+}
+
 @media (max-width: 767.98px) {
-    .contenido-pc {
-        display: none;
+    body {
+        background-color: #f0f2f5;
     }
-    .contenido-movil {
-        display: block;
+    .contenido-principal {
+        margin-left: auto;
+        padding-top: 15px;
+    }
+    .barra-superior {
+        position: fixed!important;
+        height: 100px!important;
+        bottom: 0!important;
+        width: 100%!important;
+    }
+    .card-header {
+        background-color: white!important;
+    }
+    .miniatura-video {
+        height: 159px!important;
+        margin: 0%!important;
+        padding: 0%!important;
+    }
+    .perfil-imagen {
+        height: 96px!important;
+        width: 96px!important;
+        left: 50%;
+    }
+    #perfil-usuario {
+        padding-top: 25px;
+        background-color: white;
+    }
+}
+
+@media (min-width: 768px) {
+    .card {
+        position: 0;
+        display: 0;
+        display: 0;
+        -ms-flex-direction: 0;
+        flex-direction: 0;
+        min-width: 0;
+        word-wrap: 0;
+        background-color: #fff;
+        background-clip: 0;
+        border: 0;
+        border-radius: 0
+    }
+    .card-header {
+        background-color: white!important;
     }
 }
